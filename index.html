@@ -46,13 +46,18 @@
       <h1>🎉 Đổi mật khẩu thành công!</h1>
       <p>Mật khẩu của bạn đã được thay đổi.</p>
       <p>Chúng tôi sẽ tự động chuyển bạn trở lại ứng dụng trong vài giây...</p>
-      <a class="btn" href="https://uat.wellgo.jp/en/mypage">Mở lại ứng dụng</a>
+      <a
+        class="openAppLink"
+        style="display: none"
+        href="https://uat.wellgo.jp/en/mypage"
+        >Mở lại ứng dụng</a
+      >
     </div>
 
     <!-- Redirect về app sau 3 giây -->
     <script>
       setTimeout(function () {
-        document.querySelector(".btn").click(); // Giả lập click
+        document.getElementById("openAppLink").click();
       }, 5000);
     </script>
   </body>

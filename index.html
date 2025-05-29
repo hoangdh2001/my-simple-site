@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đổi mật khẩu thành công</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 50px;
+        background-color: #f4f4f4;
+      }
+      .container {
+        background: white;
+        border-radius: 12px;
+        padding: 30px;
+        max-width: 400px;
+        margin: 0 auto;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        color: #28a745;
+      }
+      p {
+        margin-top: 16px;
+        color: #555;
+      }
+      .btn {
+        display: inline-block;
+        margin-top: 24px;
+        padding: 12px 24px;
+        background-color: #007bff;
+        color: white;
+        text-decoration: none;
+        border-radius: 6px;
+        font-size: 16px;
+      }
+      .btn:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>🎉 Đổi mật khẩu thành công!</h1>
+      <p>Mật khẩu của bạn đã được thay đổi.</p>
+      <p>Chúng tôi sẽ tự động chuyển bạn trở lại ứng dụng trong vài giây...</p>
+    </div>
+
+    <!-- Redirect về app sau 3 giây -->
+    <script>
+      setTimeout(function () {
+        window.location.href = "https://yourdomain.com/mypage"; // Thay thế bằng Universal Link của bạn
+      }, 3000);
+    </script>
+  </body>
+</html>

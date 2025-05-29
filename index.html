@@ -51,7 +51,12 @@
     <!-- Redirect về app sau 3 giây -->
     <script>
       setTimeout(function () {
-        window.location.href = "https://uat.wellgo.jp/en/mypage"; // Thay thế bằng Universal Link của bạn
+        const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+        const isAndroid = /Android/.test(navigator.userAgent);
+
+        if (isIOS || isAndroid) {
+          window.location.href = "https://yourdomain.com/mypage";
+        }
       }, 3000);
     </script>
   </body>
